@@ -17,6 +17,7 @@
         }
     },
     "remoteEnv": {
-        "PYTHONPATH": "${containerEnv:PYTHONPATH}:${containerWorkspaceFolder}/src"
+        "PYTHONPATH": "${containerEnv:PYTHONPATH}:${containerWorkspaceFolder}/src",
+        "KAGGLE_CONFIG_DIR": "${containerWorkspaceFolder}/.kaggle"
     }
 }
