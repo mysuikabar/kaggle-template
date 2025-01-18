@@ -1,6 +1,11 @@
 # Kaggle Environment Template
 
-## Environment Setup
+## Setup
+
+### Environment Variable Setup
+Create a new file named `.env` by copying `.env.sample`, then configure it with your information including your Kaggle username, competition name, and Weights & Biases API token.
+
+### Environment Setup
 GPU + Kaggle Docker Environment
 
 1. Create a GPU instance on GCP
@@ -22,7 +27,7 @@ import torch
 torch.cuda.is_available()
 ```
 
-## Kaggle API Setup
+### Kaggle API Setup
 1. Place your Kaggle API token in the `.kaggle` directory.
 2. Set the correct permissions for the token file:
 ```bash
