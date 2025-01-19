@@ -37,3 +37,19 @@ chmod 600 .kaggle/kaggle.json
 ```bash
 kaggle competitions list
 ```
+
+## How To Use
+To upload a new Kaggle dataset:
+```bash
+make create_dataset dataset_dir=<dataset_dir> title=<title>
+```
+
+To update an existing Kaggle dataset:
+```bash
+make push_dataset dataset_dir=<dataset_dir> title=<title>
+```
+
+To convert a py file to a Kaggle notebook and upload it:
+```bash
+make push_notebook file_path=<file_path> title=<title>
+```
